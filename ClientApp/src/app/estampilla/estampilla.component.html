@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Calcular Estampilla</h2>
+        <form>
+  
+          <div class="form-group">
+            <label>Numero del Contrato</label>
+            <input type="text" name="numContrato" [(ngModel)]="estampilla.contratoctoNum" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Objeto del Contrato</label>
+            <input type="text" name="contratoObj" [(ngModel)]="estampilla.contratoObj" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Valor Contrato</label>
+            <input type="number" name="contratoValue" [(ngModel)]="estampilla.contratoValu" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Apoya Emergencia</label>
+            <select name="apoyaEmergencia" [(ngModel)]="estampilla.apoyaEmergenciaCovid" class="form-control browser-default custom-select" >
+              <option selected>Open this select menu</option>
+              <option value="1">true</option>
+              <option value="2">false</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary mr-1" (click)="add()">Register</button>
+            <button class="btn btn-secondary" type="reset">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
